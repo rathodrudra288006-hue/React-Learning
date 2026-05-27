@@ -13,6 +13,7 @@ root.render(heading);
  * <div  id="parent">
   <div id="chid">
     <h1>This is H1 tag</h1> 
+    <h2>This is h2 tag</h2>
   </div>
 </div>
 
@@ -22,11 +23,10 @@ ReactElement(Object) => HTML (browser understand)
 const parent = React.createElement(
   "div",
   { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "chid" },
+  React.createElement("div", { id: "chid" }, [
     React.createElement("h1", {}, "This is H1 tag"),
-  ),
+    React.createElement("h2", {}, "This is H2 tag"),
+  ]),
 );
 const p1 = ReactDOM.createRoot(document.getElementById("p1"));
 p1.render(parent);
