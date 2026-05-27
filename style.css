@@ -1,6 +1,10 @@
-div {
+#heading {
   background-color: blue;
   color: rgb(180, 14, 14);
-  text-align:center;
-  
+  text-align: center;
+}
+#p1 {
+  background-color: aqua;
+  color: purple;
+  text-align: center;
 }
