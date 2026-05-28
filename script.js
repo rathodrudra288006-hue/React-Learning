@@ -1,10 +1,6 @@
 // Day 1 of react
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World",
-);
+const heading = React.createElement("h1", { id: "heading" }, "Hello World");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);
 
@@ -36,3 +32,4 @@ const parent = React.createElement("div", { id: "parent" }, [
 ]);
 const p1 = ReactDOM.createRoot(document.getElementById("p1"));
 p1.render(parent);
+//Day 3

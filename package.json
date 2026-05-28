@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay Saini",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/rathodrudra288006-hue/React-Learning#readme",
+  "bugs": {
+    "url": "https://github.com/rathodrudra288006-hue/React-Learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rathodrudra288006-hue/React-Learning.git"
+  },
+  "license": "ISC",
+  "author": "Rudra",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}m
