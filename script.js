@@ -2,7 +2,7 @@
 
 const heading = React.createElement(
   "h1",
-  { id: "heading", xyz: "abc" },
+  { id: "heading" },
   "Hello World",
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
