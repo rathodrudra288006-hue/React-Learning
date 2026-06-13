@@ -44,8 +44,8 @@ const RestaruntCard = (props) => {
         alt="res-img"
         src="https://cdn3.foodviva.com/static-content/food-images/rice-recipes/vegetable-pulav-recipe/vegetable-pulav-recipe.jpg"
       />
-      <h3></h3>
-      <h4></h4>
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisins}</h4>
       <h4>4.4 Star</h4>
       <h4>38 min</h4>
     </div>
