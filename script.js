@@ -36,7 +36,7 @@ const Header = () => {
     </div>
   );
 };
-const RestaruntCard = () => {
+const RestaruntCard = (props) => {
   return (
     <div className="res-card">
       <img
