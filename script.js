@@ -44,8 +44,8 @@ const RestaruntCard = () => {
         alt="res-img"
         src="https://cdn3.foodviva.com/static-content/food-images/rice-recipes/vegetable-pulav-recipe/vegetable-pulav-recipe.jpg"
       />
-      <h3>Meghana Food</h3>
-      <h4>Biryani,North India,Asian</h4>
+      <h3></h3>
+      <h4></h4>
       <h4>4.4 Star</h4>
       <h4>38 min</h4>
     </div>
@@ -56,12 +56,14 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaruntCard />
-        <RestaruntCard />
-        <RestaruntCard />
-        <RestaruntCard />
-        <RestaruntCard />
-        <RestaruntCard />
+        <RestaruntCard 
+        resName="Meghana Food"
+        cuisins="Biryani,North India,Asian"  
+        />
+        <RestaruntCard 
+         resName="KFC"
+         cuisins="Burger,Fast Food,etc  
+        />
       </div>
     </div>
   );
