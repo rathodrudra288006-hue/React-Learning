@@ -1,21 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/** 
-  =>Header
-  -Logo
-  -Nav Item 
-  =>Body
-  -Search
-  -RestarantContainer
-    -RestaruntCard
-      -img
-      -name of the res ,star rating,cuising,delivery time,etc
-  =>Footer
-  -CopyRight
-  -Link
-  -Address
-  -Content
-*/
+
 const Header = () => {
   return (
     <div className="Header">
