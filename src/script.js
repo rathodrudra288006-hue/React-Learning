@@ -46,8 +46,8 @@ const RestaruntCard = (props) => {
       />
       <h3>{props.resName}</h3>
       <h4>{props.cuisins}</h4>
-      <h4>4.4 Star</h4>
-      <h4>38 min</h4>
+      <h4>{props.rating}</h4>
+      <h4>{props.time}</h4>
     </div>
   );
 };
@@ -56,13 +56,17 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <RestaruntCard 
-        resName="Meghana Food"
-        cuisins="Biryani,North India,Asian"  
+        <RestaruntCard
+          resName="Meghana Food"
+          cuisins="Biryani,North India,Asian"
+          rating="4.4"
+          time="38 min"
         />
-        <RestaruntCard 
-         resName="KFC"
-         cuisins="Burger,Fast Food,etc  
+        <RestaruntCard
+          resName="KFC"
+          cuisins="Burger,Fast Food,etc"
+          rating="4.0"
+          time="30 min"
         />
       </div>
     </div>
