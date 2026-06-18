@@ -19,19 +19,29 @@
 -tree shanking algorithm = remove unused code
 -different dev and prod bundles
 
+=>Header
+-Logo
+-Nav Item
+=>Body
+-Search
+-RestarantContainer
+-RestaruntCard
+-img
+-name of the res ,star rating,cuising,delivery time,etc
+=>Footer
+-CopyRight
+-Link
+-Address
+-Content
 
+Two Type of Export/Inport
 
-  =>Header
-  -Logo
-  -Nav Item 
-  =>Body
-  -Search
-  -RestarantContainer
-    -RestaruntCard
-      -img
-      -name of the res ,star rating,cuising,delivery time,etc
-  =>Footer
-  -CopyRight
-  -Link
-  -Address
-  -Content
+-Default Export/Inport
+
+Ex: export default <name of variable \ component>;
+import <name of variable \ component> from path;
+
+-Named Export/Inport
+
+Ex: export const Component;
+import {Component} from path;
