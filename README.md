@@ -18,3 +18,20 @@
 -https
 -tree shanking algorithm = remove unused code
 -different dev and prod bundles
+
+
+
+  =>Header
+  -Logo
+  -Nav Item 
+  =>Body
+  -Search
+  -RestarantContainer
+    -RestaruntCard
+      -img
+      -name of the res ,star rating,cuising,delivery time,etc
+  =>Footer
+  -CopyRight
+  -Link
+  -Address
+  -Content
