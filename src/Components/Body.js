@@ -5,8 +5,8 @@ const Body = () => {
   return (
     <div className="body">
       <div className="filter">
-  
-    </div>
+      <button className="filter-btn"></button>
+      </div>
       <div className="res-container">
         {resList.map((restaurant) => (
           <RestaruntCard key={restaurant.info.id} resData={restaurant} />
