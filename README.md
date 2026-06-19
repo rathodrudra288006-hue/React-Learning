@@ -45,3 +45,9 @@ import <name of variable \ component> from path;
 
 Ex: export const Component;
 import {Component} from path;
+
+
+#React Hooks
+  (Normal JS utility Function)
+  -useState(); = Superpowerfull state variable in React
+  -useEffect(); = hook is a built-in React tool that lets functional components synchronize with or connect to external system
