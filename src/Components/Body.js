@@ -4,7 +4,9 @@ import resList from "../utills/mockData";
 const Body = () => {
   return (
     <div className="body">
-      <div className="search">Search</div>
+      <div className="filter">
+  
+    </div>
       <div className="res-container">
         {resList.map((restaurant) => (
           <RestaruntCard key={restaurant.info.id} resData={restaurant} />
