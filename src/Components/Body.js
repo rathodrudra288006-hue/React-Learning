@@ -1,6 +1,6 @@
 import RestaruntCard from "./RestaruntCard";
 import resList from "../utills/mockData";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Body = () => {
   let [listOfRestaurants, setListOfRestaurants] = useState(resList);
