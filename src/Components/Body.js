@@ -22,7 +22,7 @@ const Body = () => {
   };
 
 
-  return (
+  return listOfRestaurants.length === 0?<shimmer />:(
     <div className="body">
       <div className="filter">
         <button
