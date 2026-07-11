@@ -51,3 +51,7 @@ import {Component} from path;
   (Normal JS utility Function)
   -useState(); = Superpowerfull state variable in React
   -useEffect(); = hook is a built-in React tool that lets functional components synchronize with or connect to external system
+
+On Effect:
+=> If no dependency array => useEffect is called on every render
+=>If dependency array is empty = [] => useEffect is called on initial render(just once)
