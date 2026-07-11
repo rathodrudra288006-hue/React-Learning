@@ -4,6 +4,10 @@ import { useState } from "react";
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
 
+  useEffect(() =>{
+    
+  },[]);
+
   return (
     <div className="Header">
       <div className="Logo-container">
