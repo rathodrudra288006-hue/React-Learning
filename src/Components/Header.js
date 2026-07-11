@@ -4,9 +4,9 @@ import { useState } from "react";
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
 
-  useEffect(() =>{
+  useEffect(() => {
     console.log("Use Effect Called");
-  },[]);
+  }, []);
 
   return (
     <div className="Header">
