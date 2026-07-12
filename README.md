@@ -55,3 +55,7 @@ import {Component} from path;
 On Effect:
 => If no dependency array => useEffect is called on every render
 =>If dependency array is empty = [] => useEffect is called on initial render(just once)
+
+#2 types of Routing in Web Apps
+-Clint side Routing
+-Server side Routing
