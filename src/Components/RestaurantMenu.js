@@ -1,4 +1,8 @@
 const RestaurntMenu = () =>{
-  return();
+  return(
+    <div className="menu">
+    
+    </div>
+  );
 }
 export default RestaurntMenu; 
