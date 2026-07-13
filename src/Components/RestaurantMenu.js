@@ -1,9 +1,5 @@
 
 const RestaurntMenu = () => {
-  
-  useEffect(() => {
-    fetchMenu();
-  }, []);
 
   const fetchMenu = async () => {
     const data = await fetch(
