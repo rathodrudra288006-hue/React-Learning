@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import Shimmer from "./shimmer";
 
 const RestaurntMenu = () => {
   const [resInfo, setResInfo] = useState(null);
