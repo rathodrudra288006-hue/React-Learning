@@ -46,11 +46,10 @@ import <name of variable \ component> from path;
 Ex: export const Component;
 import {Component} from path;
 
-
 #React Hooks
-  (Normal JS utility Function)
-  -useState(); = Superpowerfull state variable in React
-  -useEffect(); = hook is a built-in React tool that lets functional components synchronize with or connect to external system
+(Normal JS utility Function)
+-useState(); = Superpowerfull state variable in React
+-useEffect(); = hook is a built-in React tool that lets functional components synchronize with or connect to external system
 
 On Effect:
 => If no dependency array => useEffect is called on every render
@@ -59,3 +58,54 @@ On Effect:
 #2 types of Routing in Web Apps
 -Clint side Routing
 -Server side Routing
+
+Code For RestaurantMenu :(swiggy api doesn't work)
+
+import { useEffect, useState } from "react";
+import Shimmer from "./shimmer";
+import { useParams } from "react-router-dom";
+import { MENU_API } from "../utills/constants";
+
+const RestaurantMenu = () => {
+const [resInfo, setResInfo] = useState(null);
+
+const resId = useParams();
+
+useEffect(() => {
+fetchMenu();
+}, []);
+
+const fetchMenu = async () => {
+const response = await fetch(MENU_API + resId);
+const json = await data.json();
+console.log(json);
+setResInfo(json.data);
+};
+
+if (resInfo === null) return <Shimmer />;
+
+const { name, cuisines, costForTwoMessage } =
+resInfo?.cards[0]?.card?.card?.info;
+
+const { itemCards } =
+resInfo?.cards[2]?.groupedCard?.cardsGroupMap?.REGULAR?.cards[1]?.card
+?.card;
+
+return (
+
+<div className="menu">
+<h1>{name}</h1>
+<p>{cuisines.join(", ") - { costForTwoMessage }}</p>
+<h2>Menu</h2>
+<ul>
+{itemCards.map((item) => (
+<li key={item.card.info.id}>
+{item.card.info.name}-{"Rs."}
+{item.card.info.Price || item.card.info.defaultPrice}
+</li>
+))}
+</ul>
+</div>
+);
+};
+export default RestaurantMenu;
