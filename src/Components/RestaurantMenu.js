@@ -1,7 +1,6 @@
 
 const RestaurntMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
-
+  
   useEffect(() => {
     fetchMenu();
   }, []);
