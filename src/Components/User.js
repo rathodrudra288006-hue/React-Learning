@@ -1,6 +1,6 @@
 const User = () =>{
   return(
-    <div></div>
+    <div className="user-card"></div>
   )
 }
 export default User;
