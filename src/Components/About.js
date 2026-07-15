@@ -6,7 +6,7 @@ const About extends React.Component{
   render(){
     return (
     <div>
-      <h1>About</h1>
+      <h1>About Class Component</h1>
       <h2>This is Namaste React Web Series</h2>
       <User name={"Rudra(function Based)"} />
       <UserClass name={"Abhishek(class Based)"} />
@@ -16,7 +16,7 @@ const About extends React.Component{
   }
 }
 
-const About = () => {
+/*const About = () => {
   return (
     <div>
       <h1>About</h1>
@@ -25,5 +25,5 @@ const About = () => {
       <UserClass name={"Abhishek(class Based)"} />
     </div>
   );
-};
+};*/
 export default About;
