@@ -2,7 +2,11 @@ import User from "./User";
 import UserClass from "./UserClass";
 
 
-const About extends React.Component{}
+const About extends React.Component{
+  render(){
+    
+  }
+}
 
 const About = () => {
   return (
