@@ -25,6 +25,8 @@ class UserClass extends React.Component {
     });
   }
 
+  componentDidUpdate(){}
+
   render() {
     const { name, location, avatar_url } = this.state.userInfo;
 
