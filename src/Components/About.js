@@ -8,9 +8,8 @@ class About extends React.Component {
     //console.log("Perent Constructor");
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     //console.log("Parent Component Did Mount");
-    const data = await fetch("https://api.github.com/users/rathodrudra288006-hue");
   }
 
   render() {
