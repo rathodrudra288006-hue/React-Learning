@@ -109,3 +109,19 @@ return (
 );
 };
 export default RestaurantMenu;
+
+//End of API Code
+
+
+        MOUNTING
+Constructor(Dummy)
+Render(Dummy)
+    <HTML Dummy>
+Component Did Mount
+    <API Call>
+    <this.setState> -> State Variable is updated
+
+        Update
+Render()
+<HTML new api data>
+Component Did Update
