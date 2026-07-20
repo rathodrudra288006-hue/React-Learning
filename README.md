@@ -61,27 +61,13 @@ On Effect:
 
 Code For RestaurantMenu :(swiggy api doesn't work)
 
-import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../utills/constants";
+import useRestaruntMenu from "../utills/useRestaruntMenu";
 
 const RestaurantMenu = () => {
-const [resInfo, setResInfo] = useState(null);
-
-const resId = useParams();
-
-useEffect(() => {
-fetchMenu();
-}, []);
-
-const fetchMenu = async () => {
-const response = await fetch(MENU_API + resId);
-const json = await data.json();
-console.log(json);
-setResInfo(json.data);
-};
-
+const { resId } = useParams();
+const resInfo = useRestaruntMenu(resId);
 if (resInfo === null) return <Shimmer />;
 
 const { name, cuisines, costForTwoMessage } =
@@ -92,7 +78,6 @@ resInfo?.cards[2]?.groupedCard?.cardsGroupMap?.REGULAR?.cards[1]?.card
 ?.card;
 
 return (
-
 <div className="menu">
 <h1>{name}</h1>
 <p>{cuisines.join(", ") - { costForTwoMessage }}</p>
@@ -112,16 +97,18 @@ export default RestaurantMenu;
 
 //End of API Code
 
-
         MOUNTING
+
 Constructor(Dummy)
 Render(Dummy)
-    <HTML Dummy>
+<HTML Dummy>
 Component Did Mount
-    <API Call>
-    <this.setState> -> State Variable is updated
+<API Call>
+<this.setState> -> State Variable is updated
 
         Update
+
 Render()
+
 <HTML new api data>
 Component Did Update
