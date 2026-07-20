@@ -3,3 +3,5 @@ const useRestaruntMenu = () =>{
     <div></div>
   )
 }
+
+import default useRestaruntMenu;
