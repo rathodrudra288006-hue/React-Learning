@@ -1,1 +1,5 @@
-const useRestaruntMenu = () =>{}
+const useRestaruntMenu = () =>{
+  return(
+    <div></div>
+  )
+}
