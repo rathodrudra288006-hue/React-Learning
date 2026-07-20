@@ -4,4 +4,4 @@ const useRestaruntMenu = () =>{
   )
 }
 
-import default useRestaruntMenu;
+export default useRestaruntMenu;
