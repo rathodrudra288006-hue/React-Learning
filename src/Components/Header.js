@@ -13,6 +13,9 @@ const Header = () => {
       <div className="nav-item">
         <ul>
           <li>
+              Online Status:{}
+          </li>
+          <li>
             <Link to="/">Home</Link>
           </li>
           <li>
