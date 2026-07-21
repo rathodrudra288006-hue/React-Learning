@@ -7,7 +7,7 @@ const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
-  
+
   return (
     <div className="Header">
       <div className="Logo-container">
@@ -15,9 +15,7 @@ const Header = () => {
       </div>
       <div className="nav-item">
         <ul>
-          <li>
-              Online Status:{onlineStatus?"":""}
-          </li>
+          <li>Online Status:{onlineStatus ? "✅" : "⭕"}</li>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -26,6 +24,9 @@ const Header = () => {
           </li>
           <li>
             <Link to="/contect">Contect</Link>
+          </li>
+          <li>
+            <Link to="/Grocery">Grocery</Link>
           </li>
           <li>
             <Link>Cart</Link>

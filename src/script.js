@@ -1,12 +1,22 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
-import About from "./Components/About";
+
 import Contect from "./Components/Contect";
+
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+// Chunking
+// Code Splitting
+// Dynamic Bundling
+// Lazy Loding
+// On Demand Loding
+
+const Grocery = lazy(() => import("./Components/Grocery"));
+const About = lazy(() => import("./Components/About"));
 
 const AppLayout = () => {
   return (
@@ -27,11 +37,23 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<h1>Loding...</h1>}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "/contect",
         element: <Contect />,
+      },
+      {
+        path: "/Grocery",
+        element: (
+          <Suspense fallback={<h1>Loding...</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
       },
       {
         path: "/restaurants/:resId",
