@@ -1,6 +1,7 @@
 import { LOGO_URL } from "../utills/constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utills/useOnlineStatus";
 
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
