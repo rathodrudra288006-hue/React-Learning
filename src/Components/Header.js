@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="flex">
       <div className="Logo-container">
-        <img className="Logo" src={LOGO_URL} />
+        <img className="w-56" src={LOGO_URL} />
       </div>
       <div className="nav-item">
         <ul>
