@@ -8,6 +8,7 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setfilteredRestaurant] = useState([]);
   const [searchText, setsearchText] = useState("");
+  const RestaurantCardPromoted = withPromtedLabel(RestaruntCard);
 
   console.log(listOfRestaurants);
 
