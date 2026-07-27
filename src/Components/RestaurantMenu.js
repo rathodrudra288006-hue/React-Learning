@@ -1,4 +1,4 @@
-const RestaurntMenu = () => {
+const RestaurantMenu = () => {
   return (
     <div className="menu">
       <h1>Name of the Restaurant</h1>
@@ -11,4 +11,4 @@ const RestaurntMenu = () => {
     </div>
   );
 };
-export default RestaurntMenu;
+export default RestaurantMenu;
