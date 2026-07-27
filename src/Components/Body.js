@@ -1,4 +1,4 @@
-import RestaruntCard from "./RestaruntCard";
+import RestaruntCard, { withPromtedLabel } from "./RestaruntCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
