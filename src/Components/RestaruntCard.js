@@ -20,4 +20,10 @@ const RestaruntCard = (props) => {
   );
 };
 
+const withPromtedLabel = (RestaruntCard) =>{
+  return () => {
+    
+  }
+}
+
 export default RestaruntCard;
