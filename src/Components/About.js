@@ -13,7 +13,7 @@ class About extends React.Component {
   }
 
   render() {
-    console.log("Parent Render");
+   // console.log("Parent Render");
     return (
       <div>
         <h1>About Class Component</h1>
