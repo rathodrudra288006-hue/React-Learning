@@ -5,11 +5,11 @@ import React from "react";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    console.log("Perent Constructor");
+    //console.log("Perent Constructor");
   }
 
   componentDidMount() {
-    console.log("Parent Component Did Mount");
+    //console.log("Parent Component Did Mount");
   }
 
   render() {
