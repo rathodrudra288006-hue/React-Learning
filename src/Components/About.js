@@ -5,7 +5,7 @@ import React from "react";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    //console.log("Perent Constructor");
+    console.log("Perent Constructor");
   }
 
   componentDidMount() {
