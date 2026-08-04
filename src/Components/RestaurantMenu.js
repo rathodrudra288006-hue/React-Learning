@@ -1,7 +1,7 @@
 const RestaurantMenu = () => {
   const restaurant = {
     name: "Name of Restaurant",
-    cuisines: "Healthy Food, Salads, Sandwiches",
+    cuisines: "Cuisines as Per Restaurant",
     rating: "Rating as Per Restaurant",
     cost: "Cost as Per Restaurant",
   };
