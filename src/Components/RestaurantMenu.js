@@ -3,7 +3,7 @@ const RestaurantMenu = () => {
     name: "Name of Restaurant",
     cuisines: "Healthy Food, Salads, Sandwiches",
     rating: "Rating as Per Restaurant",
-    cost: "₹300 for two",
+    cost: "Cost as Per Restaurant",
   };
 
   const menu = [
