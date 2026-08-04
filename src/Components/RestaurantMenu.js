@@ -1,6 +1,6 @@
 const RestaurantMenu = () => {
   const restaurant = {
-    name: "Subway",
+    name: "Name of Restaurant",
     cuisines: "Healthy Food, Salads, Sandwiches",
     rating: "4.4 ⭐",
     cost: "₹300 for two",
