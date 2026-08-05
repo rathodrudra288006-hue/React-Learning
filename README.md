@@ -112,3 +112,13 @@ Render()
 
 <HTML new api data>
 Component Did Update
+
+
+
+# Reduc Toolkit
+-Install @reduxjs/toolkit and react-redux
+-Bulid our store
+-Connect our store to our app
+-Slice(cartSlice)
+-dispatch(action)
+-Selector
