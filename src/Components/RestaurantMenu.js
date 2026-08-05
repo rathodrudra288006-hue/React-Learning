@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../utills/cartSlice";
+
 const RestaurantMenu = () => {
   const restaurant = {
     name: "Name of Restaurant",
@@ -41,6 +44,11 @@ const RestaurantMenu = () => {
     },
   ];
 
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <div className="max-w-4xl mx-auto p-6">
       {/* Restaurant Details */}
@@ -80,7 +88,10 @@ const RestaurantMenu = () => {
           </div>
 
           <div>
-            <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+            <button
+              className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700"
+              onClick={() => handleAddItem(item)}
+            >
               ADD
             </button>
           </div>
