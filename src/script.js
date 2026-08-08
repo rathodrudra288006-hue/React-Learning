@@ -11,6 +11,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import UserContext from "./utills/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utills/appStore";
+import Cart from "./Components/Cart";
 
 // Chunking
 // Code Splitting
@@ -73,6 +74,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/Cart",
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,
