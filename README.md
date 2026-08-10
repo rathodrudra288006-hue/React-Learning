@@ -78,6 +78,7 @@ resInfo?.cards[2]?.groupedCard?.cardsGroupMap?.REGULAR?.cards[1]?.card
 ?.card;
 
 return (
+
 <div className="menu">
 <h1>{name}</h1>
 <p>{cuisines.join(", ") - { costForTwoMessage }}</p>
@@ -101,6 +102,7 @@ export default RestaurantMenu;
 
 Constructor(Dummy)
 Render(Dummy)
+
 <HTML Dummy>
 Component Did Mount
 <API Call>
@@ -113,9 +115,8 @@ Render()
 <HTML new api data>
 Component Did Update
 
-
-
 # Reduc Toolkit
+
 -Install @reduxjs/toolkit and react-redux
 -Bulid our store
 -Connect our store to our app
@@ -129,7 +130,12 @@ Component Did Update
 -End to End Testing - e2e Testing
 
 # Setting up Testing in our app
+
 -Install React Testing Library
 -Install jest
 -Install Babel dependencies
 -Configure Babel
+-Configure Parcel Config file to disable default -babel transpilation
+-Jest Configuration
+-Jest -npx jest --init
+-Install jsdom library
