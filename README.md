@@ -127,3 +127,9 @@ Component Did Update
 -Unit Testing
 -Integration Testing
 -End to End Testing - e2e Testing
+
+# Setting up Testing in our app
+-Install React Testing Library
+-Install jest
+-Install Babel dependencies
+-Configure Babel
